@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="28dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MONITOREO DE PROXIMIDAD"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDistancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distancia: -- cm"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/txtAlerta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/txtEstadoSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado: Sin consultar"
+        android:textSize="17sp"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnActualizarSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACTUALIZAR DATOS"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:id="@+id/btnVolverSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VOLVER" />
+
+</LinearLayout>

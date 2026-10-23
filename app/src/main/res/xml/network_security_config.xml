@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Por defecto se prohibe todo trafico HTTP sin cifrar -->
+    <base-config cleartextTrafficPermitted="false" />
+
+    <!-- Excepcion: solo el ESP32 en su red local -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">192.168.4.1</domain>
+    </domain-config>
+</network-security-config>
